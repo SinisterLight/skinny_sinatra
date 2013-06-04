@@ -20,5 +20,7 @@ task :spec do
   end
 end
 
+desc "Run Console"
 task :console do
+  system("irb -r ./skinny_sinatra.rb")
 end
