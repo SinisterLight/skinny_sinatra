@@ -1,4 +1,9 @@
-$: << 'lib'
+$: << File.dirname(__FILE__)
+ENV['RACK_ENV'] ||= 'development'
+
+require 'bundler'
+Bundler.require
+require 'active_support/all'
 require 'config/environment'
 
 module SkinnySinatra

@@ -1,4 +1,10 @@
+$: << File.dirname(__FILE__)
+ENV['RACK_ENV'] ||= 'development'
+
 require 'bundler/setup'
+require "active_support/all"
+require "sinatra/activerecord/rake"
+require "skinny_sinatra"
 
 Dir[File.join(File.dirname(__FILE__), 'lib/tasks/*.rake')].each { |f| load f }
 
@@ -14,3 +20,5 @@ task :spec do
   end
 end
 
+task :console do
+end

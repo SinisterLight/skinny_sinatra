@@ -5,8 +5,11 @@ gem 'sinatra-contrib'
 
 gem 'json'
 gem 'rake'
-gem 'activesupport' , '~> 3.2.8'
+gem 'activesupport', require: "active_support/all"
 gem 'rack-contrib'
+
+gem 'sinatra-activerecord'
+gem 'sqlite3'
 
 group :test do
   gem 'rspec'
