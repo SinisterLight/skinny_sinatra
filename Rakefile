@@ -2,7 +2,6 @@ $: << File.dirname(__FILE__)
 ENV['RACK_ENV'] ||= 'development'
 
 require 'bundler/setup'
-require "active_support/all"
 require "sinatra/activerecord/rake"
 require "skinny_sinatra"
 
