@@ -1,4 +1,3 @@
-$: << File.dirname(__FILE__)
 ENV['RACK_ENV'] ||= 'development'
 
 require 'bundler'

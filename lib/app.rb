@@ -3,7 +3,7 @@ module SkinnySinatra
     set :root, File.join(File.dirname(__FILE__), '..')
     set :public_folder, File.join(File.dirname(__FILE__), '../public')
 
-    use SkinnySinatra::Controllers::Ping
+    use SkinnySinatra::Controllers
 
     register Sinatra::ActiveRecordExtension
     configure :development do
